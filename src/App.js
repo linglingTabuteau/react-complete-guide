@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import UserInput from './UserInput';
 import UserOutput from './UserOutput';
-import ValidationComponent from './ValidationComponent';
-import CharComponent from './CharComponent';
+import Validation from './Validation';
+import Char from './Char';
 
 class App extends Component {
   state = {
@@ -120,10 +120,10 @@ class App extends Component {
                     // changeName={(event) => { this.changeNameHandler(event, person.id) }}
                     changeName={this.changeNameHandler.bind(this, person.id)}
                   />
-                  <ValidationComponent
+                  <Validation
                     lengthText={this.state.persons[index].name.length}
                   />
-                  <CharComponent
+                  <Char
                     letter={this.state.persons[index].name}
                     deleteLetter={this.deleteLetterHandler.bind(this, person.id, index)}
                   />

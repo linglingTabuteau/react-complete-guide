@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CharComponent = (props) => {
+const Char = (props) => {
   const styleChar = {
     display: 'inline-block',
     padding: '16px',
@@ -21,6 +21,7 @@ const CharComponent = (props) => {
               <div
                 style={styleChar}
                 key={index}
+                // why not add attributes inside method of deleteLetter
                 onClick={props.deleteLetter}>
                 <p>{letter}</p>
               </div>
@@ -38,4 +39,4 @@ const CharComponent = (props) => {
   )
 }
 
-export default CharComponent;
+export default Char;

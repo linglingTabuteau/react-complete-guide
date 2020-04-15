@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ValidationComponent = (props) => {
+const Validation = (props) => {
   let messageText = null;
   if (props.lengthText <= 5) {
     messageText = (
@@ -8,7 +8,6 @@ const ValidationComponent = (props) => {
         <p>Length of name:{props.lengthText}</p>
         <p>text too short</p>
       </div>
-
     )
   } else {
     messageText = (
@@ -21,7 +20,7 @@ const ValidationComponent = (props) => {
   }
 
   return (
-    <div className="ValidationComponent">
+    <div className="Validation">
       <h2>Length of text:</h2>
       <div>{messageText}</div>
     </div>
@@ -29,4 +28,4 @@ const ValidationComponent = (props) => {
 
 }
 
-export default ValidationComponent;
+export default Validation;
