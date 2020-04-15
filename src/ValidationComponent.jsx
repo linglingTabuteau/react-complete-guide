@@ -4,10 +4,20 @@ const ValidationComponent = (props) => {
   let messageText = null;
   if (props.lengthText <= 5) {
     messageText = (
-      <p>text too short less than 5 letters</p>
+      <div>
+        <p>Length of name:{props.lengthText}</p>
+        <p>text too short</p>
+      </div>
+
     )
   } else {
-    messageText = (<p>text too long more than 5 letters</p>)
+    messageText = (
+      <div>
+        <p>Length of name:{props.lengthText}</p>
+        <p>text too long</p>
+      </div>
+
+    )
   }
 
   return (

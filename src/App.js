@@ -121,7 +121,7 @@ class App extends Component {
                     changeName={this.changeNameHandler.bind(this, person.id)}
                   />
                   <ValidationComponent
-                    lengthText={this.state.persons[index].lText}
+                    lengthText={this.state.persons[index].name.length}
                   />
                   <CharComponent
                     letter={this.state.persons[index].name}
