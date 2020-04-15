@@ -63,7 +63,7 @@ class App extends Component {
     })
   }
 
-  deleteLetterHandler = (id,index, e) => {
+  deleteLetterHandler = (id,index) => {
     const letterList = [...this.state.persons];
     const letterArray = letterList[index].name.split('');
     letterArray.splice(index, 1);
